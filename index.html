@@ -6,21 +6,20 @@
   <title>FutureTek Apps</title>
   <style>
     :root {
-      --bg-light: #f7fbff;
-      --text-dark: #1a1a1a;
-      --text-light: #666;
-      --card-bg: #fff;
       --primary: #007bff;
-      --shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-      --radius: 18px;
+      --text-dark: #1f1f1f;
+      --text-light: #555;
+      --card-bg: rgba(255, 255, 255, 0.85);
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     }
 
     body {
       margin: 0;
       padding: 0;
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at top right, #eaf3ff, #f7fbff);
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
       color: var(--text-dark);
+      background: linear-gradient(135deg, #e0f0ff 0%, #f9f9f9 100%);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -28,106 +27,115 @@
     }
 
     .container {
+      width: 95%;
+      max-width: 650px;
       background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
       box-shadow: var(--shadow);
-      border-radius: var(--radius);
-      padding: 60px 50px;
+      padding: 50px 40px;
       text-align: center;
-      max-width: 620px;
-      width: 92%;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     h1 {
-      font-size: 2em;
+      font-size: 2.2em;
+      font-weight: 700;
+      color: var(--text-dark);
       margin-bottom: 10px;
     }
 
     p {
+      font-size: 1.1em;
       color: var(--text-light);
       margin-bottom: 40px;
-      font-size: 1.05em;
     }
 
-    .app-card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-      padding: 22px 25px;
+    .app-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .app-item {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      transition: all 0.25s ease;
+      padding: 16px 20px;
       display: flex;
       align-items: center;
-      gap: 18px;
-      margin-bottom: 25px;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      justify-content: space-between;
     }
 
-    .app-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    .app-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .app-left {
+      display: flex;
+      align-items: center;
+      text-align: left;
     }
 
     .app-icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 14px;
+      width: 48px;
+      height: 48px;
+      margin-right: 16px;
+      border-radius: 12px;
       object-fit: cover;
-      flex-shrink: 0;
-    }
-
-    .app-info {
-      text-align: left;
-      flex: 1;
     }
 
     .app-name {
-      font-size: 1.05em;
+      font-size: 1.1em;
       font-weight: 600;
-      margin-bottom: 6px;
+      color: var(--text-dark);
     }
 
-    .app-policy {
-      font-size: 0.9em;
-      color: var(--primary);
+    .app-button {
+      background: var(--primary);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
       text-decoration: none;
+      font-size: 0.9em;
+      font-weight: 500;
+      transition: background 0.25s ease;
     }
 
-    .app-policy:hover {
-      text-decoration: underline;
-    }
-
-    .play-badge {
-      width: 145px;
-      margin-top: 10px;
+    .app-button:hover {
+      background: #0056b3;
     }
 
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #999;
+      margin-top: 45px;
+      font-size: 0.95em;
+      color: #777;
     }
 
     footer a {
       color: var(--primary);
       text-decoration: none;
+      transition: color 0.2s;
     }
 
     footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 480px) {
-      .container {
-        padding: 40px 25px;
-      }
-      .app-card {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .app-icon {
-        margin-bottom: 10px;
-      }
-      .play-badge {
-        width: 135px;
-      }
+      color: #0056b3;
     }
   </style>
 </head>
@@ -136,48 +144,45 @@
     <h1>FutureTek Apps</h1>
     <p>Innovative, lightweight, and privacy-focused mobile tools for everyone.</p>
 
-    <!-- OptiPDF App -->
-    <div class="app-card">
-      <img
-        src="https://play-lh.googleusercontent.com/ZcdRtokNZ4syvuFljjVaVBT6-wEbMDSqrLzqLB9Ig8iigP0HpWeOOeKcBsnu1rhQP9u5zw4l-ka75lIysGQiCw=w480-h960"
-        alt="OptiPDF Icon"
-        class="app-icon"
-      />
-      <div class="app-info">
-        <div class="app-name">OptiPDF – Smart PDF Toolkit</div>
-        <a href="https://futuretekapps.github.io/OptiPDF/privacy.html" class="app-policy">View Privacy Policy</a><br />
-        <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.pdfoptimizer" target="_blank">
+    <ul class="app-list">
+      <li class="app-item">
+        <div class="app-left">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-            alt="Get it on Google Play"
-            class="play-badge"
+            src="https://play-lh.googleusercontent.com/placeholder-optipdf=w480-h480"
+            alt="OptiPDF Icon"
+            class="app-icon"
+            onerror="this.style.display='none'"
           />
-        </a>
-      </div>
-    </div>
+          <div class="app-name">OptiPDF – Smart PDF Toolkit</div>
+        </div>
+        <a
+          href="https://futuretekapps.github.io/OptiPDF/privacy.html"
+          class="app-button"
+          >Privacy Policy</a
+        >
+      </li>
 
-    <!-- ColorBee App -->
-    <div class="app-card">
-      <img
-        src="https://play-lh.googleusercontent.com/6n5jnVh45mh9F2MZvSC1sGfGk2ivQhogzUkmJdSkJa0ignIKT51LhymqozZPVUraJiPB=w240-h480-rw"
-        alt="ColorBee Icon"
-        class="app-icon"
-      />
-      <div class="app-info">
-        <div class="app-name">ColorBee – Kids Coloring App</div>
-        <a href="https://futuretekapps.github.io/ColorBee/privacy.html" class="app-policy">View Privacy Policy</a><br />
-        <a href="https://play.google.com/store/apps/details?id=com.splashncolor" target="_blank">
+      <li class="app-item">
+        <div class="app-left">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-            alt="Get it on Google Play"
-            class="play-badge"
+            src="https://play-lh.googleusercontent.com/placeholder-colorbee=w480-h480"
+            alt="ColorBee Icon"
+            class="app-icon"
+            onerror="this.style.display='none'"
           />
-        </a>
-      </div>
-    </div>
+          <div class="app-name">ColorBee – Kids Coloring App</div>
+        </div>
+        <a
+          href="https://futuretekapps.github.io/ColorBee/privacy.html"
+          class="app-button"
+          >Privacy Policy</a
+        >
+      </li>
+    </ul>
 
     <footer>
-      Contact: <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a>
+      Contact:
+      <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a>
     </footer>
   </div>
 </body>
