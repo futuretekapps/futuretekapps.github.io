@@ -68,7 +68,7 @@
       padding: 0;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 20px;
     }
 
     .app-item {
@@ -77,6 +77,11 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
       overflow: hidden;
       transition: all 0.25s ease;
+      padding: 18px 20px;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
     .app-item:hover {
@@ -84,36 +89,45 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
 
-    .app-link {
-      text-decoration: none;
-      color: inherit;
-      display: flex;
-      align-items: center;
-      padding: 18px 20px;
-    }
-
     .app-icon {
-      width: 48px;
-      height: 48px;
-      margin-right: 16px;
+      width: 52px;
+      height: 52px;
+      margin-right: 18px;
       border-radius: 12px;
       object-fit: cover;
+      flex-shrink: 0;
     }
 
     .app-details {
-      text-align: left;
+      flex: 1;
+      min-width: 200px;
     }
 
     .app-name {
       font-size: 1.1em;
       font-weight: 600;
       color: var(--text-dark);
+      margin-bottom: 5px;
     }
 
     .app-policy {
       font-size: 0.9em;
       color: var(--primary);
-      margin-top: 3px;
+      text-decoration: none;
+    }
+
+    .app-policy:hover {
+      text-decoration: underline;
+    }
+
+    .play-badge {
+      width: 150px;
+      margin-top: 10px;
+      transition: transform 0.2s ease;
+    }
+
+    .play-badge:hover {
+      transform: scale(1.05);
     }
 
     footer {
@@ -139,47 +153,35 @@
     <p>Innovative, lightweight, and privacy-focused mobile tools for everyone.</p>
 
     <ul class="app-list">
+      <!-- OptiPDF -->
       <li class="app-item">
-        <a
-          href="https://futuretekapps.github.io/OptiPDF/privacy.html"
-          class="app-link"
-        >
-          <img
-            src="https://play-lh.googleusercontent.com/ZcdRtokNZ4syvuFljjVaVBT6-wEbMDSqrLzqLB9Ig8iigP0HpWeOOeKcBsnu1rhQP9u5zw4l-ka75lIysGQiCw=w480-h960"
-            alt="OptiPDF Icon"
-            class="app-icon"
-            onerror="this.style.display='none'"
-          />
-          <div class="app-details">
-            <div class="app-name">OptiPDF – Smart PDF Toolkit</div>
-            <div class="app-policy">View Privacy Policy</div>
-          </div>
-        </a>
+        <img
+          src="https://play-lh.googleusercontent.com/ZcdRtokNZ4syvuFljjVaVBT6-wEbMDSqrLzqLB9Ig8iigP0HpWeOOeKcBsnu1rhQP9u5zw4l-ka75lIysGQiCw=w480-h960"
+          alt="OptiPDF Icon"
+          class="app-icon"
+          onerror="this.style.display='none'"
+        />
+        <div class="app-details">
+          <div class="app-name">OptiPDF – Smart PDF Toolkit</div>
+          <a
+            href="https://futuretekapps.github.io/OptiPDF/privacy.html"
+            class="app-policy"
+            >View Privacy Policy</a
+          ><br />
+          <a
+            href="https://play.google.com/store/apps/details?id=com.futuretekapps.pdfoptimizer"
+            target="_blank"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+              alt="Get it on Google Play"
+              class="play-badge"
+            />
+          </a>
+        </div>
       </li>
 
+      <!-- ColorBee -->
       <li class="app-item">
-        <a
-          href="https://futuretekapps.github.io/ColorBee/privacy.html"
-          class="app-link"
-        >
-          <img
-            src="https://play-lh.googleusercontent.com/6n5jnVh45mh9F2MZvSC1sGfGk2ivQhogzUkmJdSkJa0ignIKT51LhymqozZPVUraJiPB=w240-h480-rw"
-            alt="ColorBee Icon"
-            class="app-icon"
-            onerror="this.style.display='none'"
-          />
-          <div class="app-details">
-            <div class="app-name">ColorBee – Kids Coloring App</div>
-            <div class="app-policy">View Privacy Policy</div>
-          </div>
-        </a>
-      </li>
-    </ul>
-
-    <footer>
-      Contact:
-      <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a>
-    </footer>
-  </div>
-</body>
-</html>
+        <img
+          src="https://play-lh.googleusercontent.com/6n5jnVh45mh9F2MZvSC1sGfGk2ivQhogzUkmJdSkJa0ignIKT51LhymqozZPVUraJiPB=w240-h4
