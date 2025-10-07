@@ -75,11 +75,8 @@
       background: white;
       border-radius: 14px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+      overflow: hidden;
       transition: all 0.25s ease;
-      padding: 16px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
 
     .app-item:hover {
@@ -87,10 +84,12 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     }
 
-    .app-left {
+    .app-link {
+      text-decoration: none;
+      color: inherit;
       display: flex;
       align-items: center;
-      text-align: left;
+      padding: 18px 20px;
     }
 
     .app-icon {
@@ -101,25 +100,20 @@
       object-fit: cover;
     }
 
+    .app-details {
+      text-align: left;
+    }
+
     .app-name {
       font-size: 1.1em;
       font-weight: 600;
       color: var(--text-dark);
     }
 
-    .app-button {
-      background: var(--primary);
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 8px;
-      text-decoration: none;
+    .app-policy {
       font-size: 0.9em;
-      font-weight: 500;
-      transition: background 0.25s ease;
-    }
-
-    .app-button:hover {
-      background: #0056b3;
+      color: var(--primary);
+      margin-top: 3px;
     }
 
     footer {
@@ -146,37 +140,39 @@
 
     <ul class="app-list">
       <li class="app-item">
-        <div class="app-left">
+        <a
+          href="https://futuretekapps.github.io/OptiPDF/privacy.html"
+          class="app-link"
+        >
           <img
             src="https://play-lh.googleusercontent.com/placeholder-optipdf=w480-h480"
             alt="OptiPDF Icon"
             class="app-icon"
             onerror="this.style.display='none'"
           />
-          <div class="app-name">OptiPDF – Smart PDF Toolkit</div>
-        </div>
-        <a
-          href="https://futuretekapps.github.io/OptiPDF/privacy.html"
-          class="app-button"
-          >Privacy Policy</a
-        >
+          <div class="app-details">
+            <div class="app-name">OptiPDF – Smart PDF Toolkit</div>
+            <div class="app-policy">View Privacy Policy</div>
+          </div>
+        </a>
       </li>
 
       <li class="app-item">
-        <div class="app-left">
+        <a
+          href="https://futuretekapps.github.io/ColorBee/privacy.html"
+          class="app-link"
+        >
           <img
             src="https://play-lh.googleusercontent.com/placeholder-colorbee=w480-h480"
             alt="ColorBee Icon"
             class="app-icon"
             onerror="this.style.display='none'"
           />
-          <div class="app-name">ColorBee – Kids Coloring App</div>
-        </div>
-        <a
-          href="https://futuretekapps.github.io/ColorBee/privacy.html"
-          class="app-button"
-          >Privacy Policy</a
-        >
+          <div class="app-details">
+            <div class="app-name">ColorBee – Kids Coloring App</div>
+            <div class="app-policy">View Privacy Policy</div>
+          </div>
+        </a>
       </li>
     </ul>
 
