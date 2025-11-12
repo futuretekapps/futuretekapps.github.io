@@ -1,268 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FutureTek Apps</title>
-  <style>
-    :root {
-      --bg-light: #f7fbff;
-      --text-dark: #1a1a1a;
-      --text-light: #666;
-      --card-bg: #fff;
-      --primary: #007bff;
-      --shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
-      --radius: 18px;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: radial-gradient(circle at top right, #eaf3ff, #f7fbff);
-      color: var(--text-dark);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      background: var(--card-bg);
-      box-shadow: var(--shadow);
-      border-radius: var(--radius);
-      padding: 60px 50px;
-      text-align: center;
-      max-width: 680px;
-      width: 92%;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: var(--text-light);
-      margin-bottom: 40px;
-      font-size: 1.05em;
-    }
-
-    .app-card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-      padding: 22px 25px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 25px;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      flex-wrap: wrap;
-    }
-
-    .app-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
-    }
-
-    .app-left {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-    }
-
-    .app-icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 14px;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
-
-    .app-info {
-      text-align: left;
-    }
-
-    .app-name {
-      font-size: 1.05em;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-    
-    .app-links {
-      display: flex;
-      gap: 8px; /* Add some space between the links */
-    }
-
-    .app-policy {
-      font-size: 0.9em;
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    .app-policy:hover {
-      text-decoration: underline;
-    }
-    
-    .link-separator {
-      font-size: 0.9em;
-      color: #ccc;
-    }
-
-    .play-badge {
-      width: 145px;
-      transition: transform 0.2s ease;
-    }
-
-    .play-badge:hover {
-      transform: scale(1.05);
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #999;
-    }
-
-    footer a {
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      .app-card {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-      .play-badge {
-        align-self: flex-start;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy for SudokuSmart</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>FutureTek Apps</h1>
-    <p>Creative, secure, and easy-to-use mobile apps for everyone.</p>
 
-    <!-- OptiPDF App -->
-    <div class="app-card">
-      <div class="app-left">
-        <img
-          src="https://play-lh.googleusercontent.com/ZcdRtokNZ4syvuFljjVaVBT6-wEbMDSqrLzqLB9Ig8iigP0HpWeOOeKcBsnu1rhQP9u5zw4l-ka75lIysGQiCw=w480-h960"
-          alt="OptiPDF Icon"
-          class="app-icon"
-        />
-        <div class="app-info">
-          <div class="app-name">OptiPDF – Smart PDF Toolkit</div>
-          <div class="app-links">
-            <a href="https://futuretekapps.github.io/OptiPDF/privacy.html" class="app-policy">Privacy Policy</a>
-          </div>
-        </div>
-      </div>
-      <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.pdfoptimizer" target="_blank">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-          alt="Get it on Google Play"
-          class="play-badge"
-        />
-      </a>
-    </div>
+    <h1>Privacy Policy for SudokuSmart</h1>
+    <p><strong>Last Updated: [Date]</strong></p>
 
-    <!-- ColorBee App -->
-    <div class="app-card">
-      <div class="app-left">
-        <img
-          src="https://play-lh.googleusercontent.com/6n5jnVh45mh9F2MZvSC1sGfGk2ivQhogzUkmJdSkJa0ignIKT51LhymqozZPVUraJiPB=w240-h480-rw"
-          alt="ColorBee Icon"
-          class="app-icon"
-        />
-        <div class="app-info">
-          <div class="app-name">ColorBee – Kids Coloring App</div>
-          <div class="app-links">
-            <a href="https://futuretekapps.github.io/ColorBee/privacy.html" class="app-policy">Privacy Policy</a>
-          </div>
-        </div>
-      </div>
-      <a href="https://play.google.com/store/apps/details?id=com.splashncolor" target="_blank">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-          alt="Get it on Google Play"
-          class="play-badge"
-        />
-      </a>
-    </div>
+    <p>This privacy policy governs your use of the software application SudokuSmart ("Application") for mobile devices that was created by <strong>[Your Name/Company Name]</strong>.</p>
 
-    <!-- NEW: Sudoku Smart App -->
-    <div class="app-card">
-      <div class="app-left">
-        <!--
-          Replace the src below with your actual Sudoku Smart icon URL.
-          You can use a GitHub hosted image (raw.githubusercontent.com/...), a CDN path,
-          or the local path where you store icons on the site (e.g. /assets/sudoku-icon.png).
-        -->
-        <img
-          src="/assets/sudoku-icon.png"
-          alt="Sudoku Smart Icon"
-          class="app-icon"
-        />
-        <div class="app-info">
-          <div class="app-name">Sudoku Smart</div>
-          <div class="app-links">
-            <a href="https://futuretekapps.github.io/SudokuSmart/Privacy.html" class="app-policy">Privacy Policy</a>
-            <span class="link-separator">|</span>
-            <a href="https://futuretekapps.github.io/SudokuSmart/terms.html" class="app-policy">Terms</a>
-          </div>
-        </div>
-      </div>
-      <!--
-        Update the Play Store package id below if your app's id is different.
-        Example used: com.futuretekapps.sudokusmart
-      -->
-      <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.sudokusmart" target="_blank">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-          alt="Get it on Google Play"
-          class="play-badge"
-        />
-      </a>
-    </div>
+    <h2>What information does the Application obtain and how is it used?</h2>
+    
+    <h3>Automatically Collected Information</h3>
+    <p>The Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile devices unique device ID, the IP address of your mobile device, your mobile operating system, and information about the way you use the Application. This data is collected to improve the performance and user experience of our app.</p>
 
-    <!-- Tickdown App -->
-    <div class="app-card">
-      <div class="app-left">
-        <img
-          src="https://play-lh.googleusercontent.com/your-new-tickdown-icon-url"
-          alt="Tickdown Icon"
-          class="app-icon"
-        />
-        <div class="app-info">
-          <div class="app-name">TickDown: Countdown Planner</div>
-          <div class="app-links">
-            <a href="https://futuretekapps.github.io/TickDown/privacy.html" class="app-policy">Privacy Policy</a>
-            <span class="link-separator">|</span>
-            <a href="https://futuretekapps.github.io/TickDown/terms.html" class="app-policy">Terms & Conditions</a>
-          </div>
-        </div>
-      </div>
-      <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.tickdown" target="_blank">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-          alt="Get it on Google Play"
-          class="play-badge"
-        />
-      </a>
-    </div>
+    <p>Specifically, we use third-party services that collect and process this data:</p>
 
-    <footer>
-      Contact: <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a>
-    </footer>
-  </div>
+    <ul>
+        <li>
+            <strong>Google AdMob:</strong> Our application uses Google AdMob to display advertisements. If you are a user in the European Economic Area (EEA) or the UK, we will first ask for your consent to show personalized or non-personalized ads through Google's User Messaging Platform (UMP).
+            <ul>
+                <li><strong>Personalized Ads:</strong> If you grant consent, AdMob may use your advertising ID to show you ads that are more relevant to your interests.</li>
+                <li><strong>Non-Personalized Ads:</strong> If you do not grant consent, you will still see ads, but they will be contextual (based on the app's content) rather than based on your personal data.</li>
+            </ul>
+            You can change your consent preferences at any time within the app's settings. For more information on how Google uses data from ads, please see <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Ad Technology Policy</a>.
+        </li>
+        <li>
+            <strong>Google Analytics for Firebase:</strong> We use this service to understand how our users engage with the Application. It helps us track anonymized usage data such as which features are most popular, game completion statistics (like difficulty and time taken), and overall user engagement. This data is aggregated and does not personally identify you. It is used solely to improve the Application.
+        </li>
+        <li>
+            <strong>Firebase Crashlytics:</strong> To improve the stability of our Application, we use Firebase Crashlytics to automatically collect crash reports. When the app crashes, this service collects information about the device state and the code that caused the crash. This information does not contain personally identifiable information and is used exclusively for diagnosing and fixing bugs.
+        </li>
+    </ul>
+
+    <h2>User Provided Information</h2>
+    <p>The Application does not require user registration and does not collect any personally identifiable information from you, such as your name, email address, or phone number. Any game progress, statistics, or achievements are stored locally on your device and are not transmitted to us.</p>
+    
+    <h2>Does the Application collect precise real-time location information of the device?</h2>
+    <p>This Application does not collect precise information about the location of your mobile device.</p>
+
+    <h2>Do third parties see and/or have access to information obtained by the Application?</h2>
+    <p>Only aggregated, anonymized data is periodically transmitted to external services as described above to help us improve the Application and its services. We will share your information with third parties only in the ways that are described in this privacy statement.</p>
+
+    <p>We may disclose Automatically Collected Information:</p>
+    <ul>
+        <li>as required by law, such as to comply with a subpoena, or similar legal process;</li>
+        <li>when we believe in good faith that disclosure is necessary to protect our rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+        <li>with our trusted services providers who work on our behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+    </ul>
+
+    <h2>Data Retention Policy, Managing Your Information</h2>
+    <p>We will retain automatically collected information for up to 24 months and thereafter may store it in aggregate. All game data, such as your statistics and achievements, is stored locally on your device. If you uninstall the Application, this data will be removed.</p>
+
+    <h2>Children</h2>
+    <p>We do not use the Application to knowingly solicit data from or market to children under the age of 13. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us at <strong>[Your Email Address]</strong>. We will delete such information from our files within a reasonable time.</p>
+
+    <h2>Security</h2>
+    <p>We are concerned about safeguarding the confidentiality of your information. We provide physical, electronic, and procedural safeguards to protect information we process and maintain. Please be aware that, although we endeavor to provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.</p>
+
+    <h2>Changes</h2>
+    <p>This Privacy Policy may be updated from time to time for any reason. We will notify you of any changes to our Privacy Policy by posting the new Privacy Policy here. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
+
+    <h2>Your Consent</h2>
+    <p>By using the Application, you are consenting to our processing of your information as set forth in this Privacy Policy now and as amended by us. "Processing,” means using cookies on a computer/hand held device or using or touching information in any way, including, but not limited to, collecting, storing, deleting, using, combining and disclosing information.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions regarding privacy while using the Application, or have questions about our practices, please contact us via email at <strong>[Your Email Address]</strong>.</p>
+
 </body>
 </html>
