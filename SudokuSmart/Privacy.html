@@ -1,116 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy for Sudoku Smart</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #1976D2; /* Using your app's primary color */
-        }
-        h1 {
-            border-bottom: 2px solid #F5F5F5;
-            padding-bottom: 10px;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-        a {
-            color: #1976D2;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FutureTek Apps</title>
+  <style>
+    :root {
+      --bg-light: #f7fbff;
+      --text-dark: #1a1a1a;
+      --text-light: #666;
+      --card-bg: #fff;
+      --primary: #007bff;
+      --shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+      --radius: 18px;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: radial-gradient(circle at top right, #eaf3ff, #f7fbff);
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 60px 50px;
+      text-align: center;
+      max-width: 680px;
+      width: 92%;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-light);
+      margin-bottom: 40px;
+      font-size: 1.05em;
+    }
+
+    .app-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      padding: 22px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      flex-wrap: wrap;
+    }
+
+    .app-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    }
+
+    .app-left {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .app-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 14px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .app-info {
+      text-align: left;
+    }
+
+    .app-name {
+      font-size: 1.05em;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    
+    .app-links {
+      display: flex;
+      gap: 8px; /* Add some space between the links */
+    }
+
+    .app-policy {
+      font-size: 0.9em;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .app-policy:hover {
+      text-decoration: underline;
+    }
+    
+    .link-separator {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    .play-badge {
+      width: 145px;
+      transition: transform 0.2s ease;
+    }
+
+    .play-badge:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .app-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .play-badge {
+        align-self: flex-start;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>FutureTek Apps</h1>
+    <p>Creative, secure, and easy-to-use mobile apps for everyone.</p>
 
-    <h1>Privacy Policy for Sudoku Smart</h1>
+    <!-- OptiPDF App -->
+    <div class="app-card">
+      <div class="app-left">
+        <img
+          src="https://play-lh.googleusercontent.com/ZcdRtokNZ4syvuFljjVaVBT6-wEbMDSqrLzqLB9Ig8iigP0HpWeOOeKcBsnu1rhQP9u5zw4l-ka75lIysGQiCw=w480-h960"
+          alt="OptiPDF Icon"
+          class="app-icon"
+        />
+        <div class="app-info">
+          <div class="app-name">OptiPDF – Smart PDF Toolkit</div>
+          <div class="app-links">
+            <a href="https://futuretekapps.github.io/OptiPDF/privacy.html" class="app-policy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.pdfoptimizer" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Get it on Google Play"
+          class="play-badge"
+        />
+      </a>
+    </div>
 
-    <p><strong>Last Updated:</strong> November 4, 2025</p>
+    <!-- ColorBee App -->
+    <div class="app-card">
+      <div class="app-left">
+        <img
+          src="https://play-lh.googleusercontent.com/6n5jnVh45mh9F2MZvSC1sGfGk2ivQhogzUkmJdSkJa0ignIKT51LhymqozZPVUraJiPB=w240-h480-rw"
+          alt="ColorBee Icon"
+          class="app-icon"
+        />
+        <div class="app-info">
+          <div class="app-name">ColorBee – Kids Coloring App</div>
+          <div class="app-links">
+            <a href="https://futuretekapps.github.io/ColorBee/privacy.html" class="app-policy">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.splashncolor" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Get it on Google Play"
+          class="play-badge"
+        />
+      </a>
+    </div>
 
-    <p>Thank you for choosing Sudoku Smart ("we," "us," "our"). This Privacy Policy is designed to help you understand how we collect, use, and safeguard the information you provide to us and to assist you in making informed decisions when using our mobile application (the "App").</p>
+    <!-- NEW: Sudoku Smart App -->
+    <div class="app-card">
+      <div class="app-left">
+        <!--
+          Replace the src below with your actual Sudoku Smart icon URL.
+          You can use a GitHub hosted image (raw.githubusercontent.com/...), a CDN path,
+          or the local path where you store icons on the site (e.g. /assets/sudoku-icon.png).
+        -->
+        <img
+          src="/assets/sudoku-icon.png"
+          alt="Sudoku Smart Icon"
+          class="app-icon"
+        />
+        <div class="app-info">
+          <div class="app-name">Sudoku Smart</div>
+          <div class="app-links">
+            <a href="https://futuretekapps.github.io/SudokuSmart/Privacy.html" class="app-policy">Privacy Policy</a>
+            <span class="link-separator">|</span>
+            <a href="https://futuretekapps.github.io/SudokuSmart/terms.html" class="app-policy">Terms</a>
+          </div>
+        </div>
+      </div>
+      <!--
+        Update the Play Store package id below if your app's id is different.
+        Example used: com.futuretekapps.sudokusmart
+      -->
+      <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.sudokusmart" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Get it on Google Play"
+          class="play-badge"
+        />
+      </a>
+    </div>
 
-    <h2>1. Information We Collect</h2>
+    <!-- Tickdown App -->
+    <div class="app-card">
+      <div class="app-left">
+        <img
+          src="https://play-lh.googleusercontent.com/your-new-tickdown-icon-url"
+          alt="Tickdown Icon"
+          class="app-icon"
+        />
+        <div class="app-info">
+          <div class="app-name">TickDown: Countdown Planner</div>
+          <div class="app-links">
+            <a href="https://futuretekapps.github.io/TickDown/privacy.html" class="app-policy">Privacy Policy</a>
+            <span class="link-separator">|</span>
+            <a href="https://futuretekapps.github.io/TickDown/terms.html" class="app-policy">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+      <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.tickdown" target="_blank">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Get it on Google Play"
+          class="play-badge"
+        />
+      </a>
+    </div>
 
-    <p>Our App is designed to be a fun and engaging experience without requiring personal identification. We collect a limited amount of non-personally identifiable information to improve our services and provide a better user experience.</p>
-
-    <h3>a. Data You Provide to Us</h3>
-    <p>We do not require you to create an account or provide any personal information like your name, email address, or phone number to use Sudoku Smart.</p>
-    
-    <h3>b. Data Collected Automatically</h3>
-    <ul>
-        <li><strong>Game Progress and Statistics:</strong> To provide features like "Continue Game," "Daily Challenge," and personal statistics (e.g., win rate, best times, streaks), we store your game data locally on your device. This data is not transmitted to us and remains on your device.</li>
-        <li><strong>Usage and Analytics Data:</strong> We use third-party services to automatically collect anonymous data about how you interact with our App. This may include:
-            <ul>
-                <li>Device Information (e.g., device model, operating system version).</li>
-                <li>In-game events (e.g., starting a new game, using a hint, completing a puzzle).</li>
-                <li>Crash reports and performance data to help us identify and fix bugs.</li>
-            </ul>
-        </li>
-        <li><strong>Advertising Data:</strong> To support our App, we show advertisements. Our advertising partners may collect information to provide personalized ads. This includes:
-            <ul>
-                <li>Your device's Advertising ID.</li>
-                <li>Location information (at a general, non-precise level).</li>
-                <li>Information about ads you have seen or interacted with.</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>2. How We Use Your Information</h2>
-
-    <p>The information we collect is used for the following purposes:</p>
-    <ul>
-        <li><strong>To Operate and Improve the App:</strong> We use analytics and crash reports to understand how our App is used, identify bugs, and make improvements to features and performance.</li>
-        <li><strong>To Provide and Maintain Core Features:</strong> Local data storage is essential for features like saving game progress and tracking your personal best scores.</li>
-        <li><strong>To Provide Advertising:</strong> We use this information to display relevant advertisements, which helps keep the App free.</li>
-    </ul>
-
-    <h2>3. Third-Party Services</h2>
-
-    <p>We rely on trusted third-party services to operate our App. These services have their own privacy policies, and we encourage you to review them.</p>
-    <ul>
-        <li>
-            <strong>Google AdMob:</strong> Our advertising partner. Used to display banner, interstitial, and rewarded video ads.
-            <br>
-            <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Advertising Policies</a>
-        </li>
-        <li>
-            <strong>Google Analytics for Firebase:</strong> Our analytics provider. Used to collect anonymous usage data and crash reports.
-            <br>
-            <a href="https://firebase.google.com/policies/analytics" target="_blank">Firebase Privacy and Security</a>
-        </li>
-    </ul>
-
-    <h2>4. Data Storage and Security</h2>
-    <p>All your personal game progress, statistics, and settings are stored **locally on your device**. This data is not sent to our servers and is under your control. If you uninstall the App, this data will be permanently deleted.</p>
-
-    <h2>5. Your Choices and Opt-Out Options</h2>
-    <p>You can control the collection of some information:</p>
-    <ul>
-        <li><strong>Personalized Advertising:</strong> You can opt-out of personalized advertising by adjusting the settings on your Android device. Go to <code>Settings > Google > Ads</code> and enable "Opt out of Ads Personalization." This will not stop ads from appearing, but they will be less relevant to your interests.</li>
-    </ul>
-
-    <h2>6. Children's Privacy</h2>
-    <p>Our App is not directed at children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we become aware that we have collected such information, we will take steps to delete it.</p>
-
-    <h2>7. Changes to This Privacy Policy</h2>
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date at the top. You are advised to review this Privacy Policy periodically for any changes.</p>
-
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at: <br><strong>futuretekapps@gmail.com</strong></p>
-
+    <footer>
+      Contact: <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a>
+    </footer>
+  </div>
 </body>
 </html>
