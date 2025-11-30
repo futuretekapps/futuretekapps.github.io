@@ -12,74 +12,107 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
+      background-color: #fff;
     }
-    h1, h2 { color: #222; }
-    h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
-    strong { color: #111; }
+    h1, h2 { color: #1a1a1a; }
+    h1 { 
+        border-bottom: 2px solid #eee; 
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+    }
+    h2 {
+        margin-top: 30px;
+        font-size: 1.3em;
+    }
+    strong { color: #000; }
     code {
       background-color: #f4f4f4;
-      padding: 2px 4px;
+      padding: 2px 5px;
       border-radius: 4px;
       font-size: 0.9em;
+      font-family: monospace;
+      color: #d63384;
     }
     .contact {
-      margin-top: 30px;
-      padding: 15px;
-      background-color: #f9f9f9;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 8px;
       border-left: 5px solid #1565C0;
     }
     ul { padding-left: 20px; }
     li { margin-bottom: 10px; }
+    .highlight-box {
+        background-color: #e3f2fd;
+        border: 1px solid #bbdefb;
+        color: #0d47a1;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
   </style>
 </head>
 <body>
 
-<h1>Privacy Policy for TickDown</h1>
+<h1>Privacy Policy</h1>
 
-<p><strong>Effective Date:</strong> November 13, 2025</p>
+<p><strong>Last Updated:</strong> November 13, 2025</p>
 
-<p>Thank you for using TickDown! This Privacy Policy describes how our application (“TickDown,” “we,” “us,” or “our”) handles your information. We value your privacy and design TickDown to work primarily offline with full local data control.</p>
+<div class="highlight-box">
+    <p><strong>Your Privacy comes first.</strong> TickDown is a paid, ad-free application designed to operate offline. Your personal data belongs to you and stays on your device.</p>
+</div>
 
-<h2>1. The Core Principle: Your Data Stays on Your Device</h2>
-<p>TickDown does <strong>not</strong> collect, store, or transmit your personal data to any server. All events, tasks, reminders, and related information you create are stored only on your device. We never access or share your data.</p>
-
-<h2>2. Information You Provide</h2>
-<p>The app stores information you create (e.g., event titles, task details, categories) locally on your phone or tablet. None of this data is uploaded or synced to any external service unless you choose to back it up manually.</p>
-
-<h2>3. Anonymous Analytics for App Improvement</h2>
-<p>TickDown uses <strong>Firebase Analytics</strong> (by Google) to collect anonymous, aggregated usage data that helps improve app performance and stability. This data includes:</p>
+<h2>1. Data Storage and Control</h2>
+<p>TickDown follows a <strong>"Local First"</strong> architecture:</p>
 <ul>
-  <li>Feature usage statistics (e.g., how often reminders are scheduled)</li>
-  <li>Crash reports and performance diagnostics</li>
-  <li>App open frequency and version information</li>
+    <li><strong>User Content:</strong> All tasks, events, notes, and categories you create are stored in a local database on your device. We do not transmit this content to any external server.</li>
+    <li><strong>No Account Required:</strong> You do not need to create an account or sign in to use the application. We do not have access to your email address or identity.</li>
+    <li><strong>Data Deletion:</strong> Uninstalling the application will permanently delete all local data associated with it, unless you have manually created a backup file.</li>
 </ul>
 
-<p>Firebase Analytics may use the <strong>Advertising ID</strong> of your device solely for analytical purposes (to count unique app installs and active users). TickDown does <strong>not</strong> use this ID for advertising, targeting, or marketing. All analytics data is anonymous and not linked to any personal identity.</p>
+<h2>2. Permissions We Request</h2>
+<p>To function correctly, TickDown requests specific permissions. We use these strictly for the app's core functionality:</p>
 
-<h2>4. Local Storage and Data Deletion</h2>
-<p>Your app data is stored locally. Uninstalling TickDown automatically deletes this data. You can also manually delete your backup files at any time.</p>
-
-<h2>5. Backup & Restore</h2>
-<p>TickDown’s optional Backup & Restore feature lets you export and import your data manually. These backups remain entirely under your control and are not uploaded anywhere by the app.</p>
-
-<h2>6. Permissions We Request</h2>
 <ul>
-  <li><strong>POST_NOTIFICATIONS:</strong> To deliver reminders and alerts.</li>
-  <li><strong>USE_EXACT_ALARM:</strong> To ensure precise scheduling of events and countdowns.</li>
-  <li><strong>RECEIVE_BOOT_COMPLETED:</strong> To restore reminders after a device restart.</li>
+  <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to deliver the reminders, countdown alerts, and daily summaries that you schedule.</li>
+  <li><strong>Alarms (USE_EXACT_ALARM / SCHEDULE_EXACT_ALARM):</strong> Used to ensure your reminders fire at the precise time you set, rather than being delayed by system battery optimization.</li>
+  <li><strong>Calendar Access (READ_CALENDAR):</strong> <em>Optional.</em> If you enable "Show Device Calendars" in Settings, the app reads your device's calendar events to display them within the TickDown calendar view. This data is read in real-time for display purposes only and is <strong>not</strong> stored in our database or transmitted to us.</li>
+  <li><strong>Boot Completed (RECEIVE_BOOT_COMPLETED):</strong> Used to automatically reschedule your reminders after you restart your phone.</li>
 </ul>
-<p>No other sensitive permissions (camera, contacts, location, etc.) are requested.</p>
 
-<h2>7. Children's Privacy</h2>
-<p>TickDown is not directed toward children under 13, and we do not knowingly collect any personal information from children.</p>
+<h2>3. Analytics</h2>
+<p>We use <strong>Firebase Analytics</strong> (provided by Google) to collect anonymous, aggregated usage data. This helps us identify crashes, fix bugs, and understand which features are popular.</p>
+<p><strong>What we track:</strong></p>
+<ul>
+    <li>App performance (crash reports, app launch time).</li>
+    <li>Generic interactions (e.g., "User created a task", "User changed theme").</li>
+</ul>
+<p><strong>What we DO NOT track:</strong></p>
+<ul>
+    <li>We <strong>never</strong> track the text content of your tasks or events (e.g., we know a task was created, but we do not know it was named "Buy Medication").</li>
+    <li>We do not track your location.</li>
+</ul>
 
-<h2>8. Changes to This Policy</h2>
-<p>We may update this policy occasionally. Any updates will appear on this page with a new effective date.</p>
+<h2>4. Backup & Restore</h2>
+<p>The app includes a feature to export your data to a JSON file. This file is generated locally on your device.</p>
+<ul>
+    <li>You are responsible for storing this backup file securely.</li>
+    <li>If you share this file (e.g., via email or cloud storage), that transmission is subject to the privacy policies of the service you use to share it. TickDown does not see or access your backup files.</li>
+</ul>
+
+<h2>5. No Advertising</h2>
+<p>TickDown is a paid application. We do not display third-party advertisements, nor do we sell your data to advertisers or data brokers.</p>
+
+<h2>6. Children's Privacy</h2>
+<p>TickDown is not directed toward children under the age of 13. We do not knowingly collect personal information from children. Because the app works offline, parents can be assured that their child's data remains on the device.</p>
+
+<h2>7. Changes to This Policy</h2>
+<p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
 
 <div class="contact">
-  <h2>9. Contact Us</h2>
-  <p>If you have questions or concerns about this Privacy Policy, please contact:</p>
-  <p><a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a></p>
+  <h2>8. Contact Us</h2>
+  <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+  <p><strong>Email:</strong> <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a></p>
 </div>
 
 </body>
