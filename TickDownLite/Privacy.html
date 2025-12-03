@@ -14,7 +14,7 @@
       padding: 20px;
       background-color: #fff;
     }
-    h1, h2 { color: #1a1a1a; }
+    h1, h2, h3 { color: #1a1a1a; }
     h1 { 
         border-bottom: 2px solid #eee; 
         padding-bottom: 10px;
@@ -34,9 +34,9 @@
     ul { padding-left: 20px; }
     li { margin-bottom: 10px; }
     .ad-notice {
-        background-color: #fff3cd;
-        border: 1px solid #ffeeba;
-        color: #856404;
+        background-color: #e3f2fd;
+        border: 1px solid #bbdefb;
+        color: #0d47a1;
         padding: 15px;
         border-radius: 5px;
         margin-bottom: 25px;
@@ -48,55 +48,61 @@
 
 <h1>Privacy Policy</h1>
 
-<p><strong>Effective Date:</strong> December 2, 2025</p>
-
-<p>Thank you for using TickDown Lite! This Privacy Policy explains how we handle your information. We prioritize your privacy while providing a free, ad-supported service.</p>
+<p><strong>Effective Date:</strong> December 3, 2025</p>
 
 <div class="ad-notice">
-    <p><strong>Summary:</strong> Your tasks, events, and personal content are stored locally on your device. We do not see them. We use third-party services (Google AdMob) to display advertisements, which may collect anonymous identifiers to show relevant ads.</p>
+    <p><strong>Summary:</strong> Your personal content (tasks, events) is stored locally on your device and is not seen by us. To keep the app free, we use third-party services for ads and handle optional in-app purchases through the Google Play Store.</p>
 </div>
 
-<h2>1. Data Storage: Local First</h2>
-<p>TickDown Lite operates primarily offline regarding your content:</p>
+<h2>1. Data Storage: Your Content is Yours</h2>
+<p>TickDown Lite follows a "Local First" architecture:</p>
 <ul>
-    <li><strong>Your Content:</strong> Events, tasks, notes, and categories are stored in a local database on your device. We do not transmit this content to our servers.</li>
-    <li><strong>Backups:</strong> Backup files are generated locally. You are responsible for storing them securely.</li>
+    <li><strong>User Content:</strong> All tasks, events, notes, and categories you create are stored only in a local database on your device. We do not transmit this content to our servers.</li>
+    <li><strong>Backups:</strong> Backup files are generated locally. You are solely responsible for storing and securing these files.</li>
 </ul>
 
-<h2>2. Advertising and Third-Party Data</h2>
-<p>To keep this app free, we display advertisements provided by <strong>Google AdMob</strong>.</p>
+<h2>2. Monetization: Ads and In-App Purchases</h2>
+<p>To support development, TickDown Lite is monetized through advertisements and an optional one-time In-App Purchase (IAP).</p>
+
+<h3>Advertising</h3>
+<p>We display advertisements provided by <strong>Google AdMob</strong> and its mediation partners. These services help keep the app free.</p>
 <ul>
-    <li><strong>Ad Personalization:</strong> AdMob may use your device's <strong>Advertising ID</strong> (GAID) and other device signals (e.g., approximate location, app usage data) to serve personalized ads that are relevant to you.</li>
-    <li><strong>Opt-Out:</strong> You can opt out of personalized advertising in your Android device settings (Settings > Google > Ads > Delete advertising ID).</li>
-    <li><strong>GDPR/UK Consent:</strong> If you are located in the EEA or UK, we ask for your explicit consent before showing personalized ads. You can manage your choices at any time within the app settings.</li>
+    <li><strong>Data for Ads:</strong> Our ad partners may use your device's <strong>Advertising ID (GAID)</strong> and other anonymous signals (like approximate location derived from your IP address) to serve personalized ads.</li>
+    <li><strong>Opt-Out:</strong> You can manage personalized advertising in your Android device settings.</li>
+    <li><strong>GDPR/UK Consent:</strong> For users in applicable regions, we request consent before showing personalized ads via Google's User Messaging Platform.</li>
 </ul>
-<p>For more information, please review <a href="https://policies.google.com/technologies/ads">Google's Advertising Privacy Policy</a>.</p>
+<p>We encourage you to review the privacy policies of our ad partners:</p>
+<ul>
+    <li><a href="https://policies.google.com/technologies/ads" target="_blank">Google AdMob</a></li>
+    <li><a href="https://www.is.com/privacy-policy/" target="_blank">IronSource</a></li>
+    <li><a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Ads</a></li>
+</ul>
+
+<h3>In-App Purchase</h3>
+<p>TickDown Lite offers a one-time In-App Purchase ("Premium Unlock") to remove ads and unlock all features. All transactions are processed securely through the <strong>Google Play Store</strong>. We do not collect or store your payment information (e.g., credit card numbers). Your purchase history is managed by Google and is used by our app to verify and restore your premium status if you reinstall or change devices.</p>
 
 <h2>3. Analytics</h2>
-<p>We use <strong>Firebase Analytics</strong> (by Google) to collect anonymous usage data to improve app stability.</p>
-<ul>
-    <li><strong>Collected Data:</strong> Crash reports, app launch time, and aggregate feature usage (e.g., "User created a task").</li>
-    <li><strong>NOT Collected:</strong> We never track the text content of your tasks or events.</li>
-</ul>
+<p>We use <strong>Firebase Analytics</strong> (by Google) to collect anonymous, aggregated usage data to help us identify crashes, fix bugs, and understand which features are most used. We <strong>never</strong> track the text content of your tasks or events.</p>
 
-<h2>4. Permissions</h2>
-<p>We request specific permissions to provide core features:</p>
+<h2>4. Permissions We Request</h2>
+<p>We only request permissions essential for the app's functionality:</p>
 <ul>
-  <li><strong>POST_NOTIFICATIONS:</strong> To deliver your scheduled reminders.</li>
-  <li><strong>USE_EXACT_ALARM:</strong> To ensure reminders ring at the exact time you set.</li>
-  <li><strong>READ_CALENDAR:</strong> (Optional) To display your device's calendar events within the app. This data is read only for display and is not stored or transmitted by us.</li>
-  <li><strong>INTERNET / ACCESS_NETWORK_STATE:</strong> Required to load advertisements and analytics.</li>
+  <li><strong>POST_NOTIFICATIONS:</strong> To deliver your scheduled reminders and alerts.</li>
+  <li><strong>USE_EXACT_ALARM:</strong> To ensure your reminders fire at the precise time you set.</li>
+  <li><strong>READ_CALENDAR:</strong> (Optional) To display your device's calendar events within the app if you enable this feature. This data is read only for display and is not stored or transmitted by us.</li>
+  <li><strong>INTERNET / ACCESS_NETWORK_STATE:</strong> Required to load advertisements, analytics data, and verify purchases.</li>
+  <li><strong>AD_ID:</strong> Required by our advertising partners to serve relevant ads and for analytics.</li>
 </ul>
 
 <h2>5. Children's Privacy</h2>
-<p>TickDown Lite is not directed toward children under the age of 13. We do not knowingly collect personal information from children. Our ad settings are configured to comply with Google Play's Families Policy where applicable.</p>
+<p>TickDown Lite is not directed toward children under the age of 13. We do not knowingly collect personal information from children. Our ad settings are configured to comply with Google Play's Families Policy.</p>
 
 <h2>6. Changes to This Policy</h2>
 <p>We may update this policy occasionally. Continued use of the app after changes constitutes acceptance of the new terms.</p>
 
 <div class="contact">
   <h2>7. Contact Us</h2>
-  <p>If you have questions about this policy or your data, please contact:</p>
+  <p>If you have any questions or concerns about this Privacy Policy, please contact:</p>
   <p><strong>Email:</strong> <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a></p>
 </div>
 
