@@ -14,17 +14,26 @@
       padding: 20px;
       background-color: #fff;
     }
-    h1, h2 { color: #1a1a1a; }
-    h1 { 
-        border-bottom: 2px solid #eee; 
-        padding-bottom: 10px;
-        margin-bottom: 30px;
+
+    h1, h2 {
+      color: #1a1a1a;
     }
+
+    h1 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
     h2 {
-        margin-top: 30px;
-        font-size: 1.3em;
+      margin-top: 30px;
+      font-size: 1.3em;
     }
-    strong { color: #000; }
+
+    strong {
+      color: #000;
+    }
+
     code {
       background-color: #f4f4f4;
       padding: 2px 5px;
@@ -33,6 +42,24 @@
       font-family: monospace;
       color: #d63384;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .highlight-box {
+      background-color: #e3f2fd;
+      border: 1px solid #bbdefb;
+      color: #0d47a1;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 25px;
+    }
+
     .contact {
       margin-top: 40px;
       padding: 20px;
@@ -40,15 +67,14 @@
       border-radius: 8px;
       border-left: 5px solid #1565C0;
     }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 10px; }
-    .highlight-box {
-        background-color: #e3f2fd;
-        border: 1px solid #bbdefb;
-        color: #0d47a1;
-        padding: 15px;
-        border-radius: 5px;
-        margin-bottom: 25px;
+
+    a {
+      color: #1565C0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -59,77 +85,119 @@
 <p><strong>Last Updated:</strong> July 5, 2026</p>
 
 <div class="highlight-box">
-    <p><strong>Your Privacy comes first.</strong> TickDown is a paid, ad-free application designed to operate offline. Your personal data belongs to you and stays on your device.</p>
+  <p><strong>Your privacy comes first.</strong> TickDown is a paid, ad-free application designed to work offline. Your personal data belongs to you and stays on your device.</p>
 </div>
 
 <h2>1. Data Storage and Control</h2>
-<p>TickDown follows a <strong>"Local First"</strong> architecture:</p>
+
+<p>TickDown follows a <strong>Local First</strong> architecture.</p>
+
 <ul>
-    <li><strong>User Content:</strong> All tasks, events, notes, and categories you create are stored in a local database on your device. We do not transmit this content to any external server.</li>
-    <li><strong>No Account Required:</strong> You do not need to create an account or sign in to use the application. We do not have access to your email address or identity.</li>
-    <li><strong>Data Deletion:</strong> Uninstalling the application will permanently delete all local data associated with it, unless you have manually created a backup file.</li>
+  <li><strong>User Content:</strong> All tasks, countdowns, events, notes, categories, and settings are stored locally on your device. This information is never uploaded to our servers.</li>
+
+  <li><strong>No Account Required:</strong> You can use TickDown without creating an account or signing in. We do not know your identity or email address.</li>
+
+  <li><strong>Data Deletion:</strong> Uninstalling the application permanently removes its local data unless you have manually exported a backup.</li>
 </ul>
 
 <h2>2. Permissions We Request</h2>
-<p>To function correctly, TickDown requests specific permissions. We use these strictly for the app's core functionality:</p>
+
+<p>TickDown requests only the permissions required for its core functionality.</p>
 
 <ul>
-  <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used solely to deliver the reminders, countdown alerts, and daily summaries that you schedule.</li>
-  <li><strong>Alarms (USE_EXACT_ALARM / SCHEDULE_EXACT_ALARM):</strong> Used to ensure your reminders fire at the precise time you set, rather than being delayed by system battery optimization.</li>
-  <li><strong>Calendar Access (READ_CALENDAR):</strong> <em>Optional.</em> If you enable "Show Device Calendars" in Settings, the app reads your device's calendar events to display them within the TickDown calendar view. This data is read in real-time for display purposes only and is <strong>not</strong> stored in our database or transmitted to us.</li>
-  <li><strong>Boot Completed (RECEIVE_BOOT_COMPLETED):</strong> Used to automatically reschedule your reminders after you restart your phone.</li>
+  <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used to deliver reminder notifications, countdown alerts, and scheduled summaries.</li>
+
+  <li><strong>Exact Alarms (USE_EXACT_ALARM / SCHEDULE_EXACT_ALARM):</strong> Used to ensure reminders occur at the exact time you choose.</li>
+
+  <li><strong>Calendar (READ_CALENDAR):</strong> <em>Optional.</em> If you enable calendar integration, TickDown reads your device calendar events so they can be displayed inside the app. Calendar data is read only when needed, is never uploaded to our servers, and is not permanently stored by TickDown.</li>
+
+  <li><strong>Boot Completed (RECEIVE_BOOT_COMPLETED):</strong> Used to restore your scheduled reminders after your device restarts.</li>
 </ul>
 
 <h2>3. Analytics and Crash Reporting</h2>
-<p>We use <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> (provided by Google) to collect usage and stability data that is not tied to your personal identity. This helps us identify crashes, fix bugs, and understand which features are popular.</p>
 
-<p><strong>User Choice (Opt-Out):</strong></p>
+<p>We use <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> (provided by Google) to help us understand how TickDown is used, identify crashes, improve stability, and enhance future versions of the app.</p>
+
+<p><strong>User Choice (Opt-Out)</strong></p>
+
 <ul>
-    <li>You have full control over your data. You can enable or disable <strong>Usage Analytics</strong> and <strong>Crash Reporting</strong> at any time via the <strong>Settings</strong> screen in the app.</li>
-    <li>If disabled, no such data will be collected or transmitted from your device.</li>
+  <li>You can enable or disable <strong>Usage Analytics</strong> and <strong>Crash Reporting</strong> at any time from the <strong>Settings</strong> screen within the app.</li>
+
+  <li>When disabled, analytics events and crash reports will no longer be collected or transmitted from your device.</li>
 </ul>
 
-<p><strong>Data Deletion:</strong> This analytics and crash data is not tied to your identity. To request deletion of any data associated with your device, or if you have any privacy concerns, email us at <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a> and we will process your request.</p>
+<p><strong>What we collect (only if enabled)</strong></p>
 
-<p><strong>What we track (if enabled):</strong></p>
 <ul>
-    <li>Crash reports and error diagnostics (to identify and fix bugs).</li>
-    <li>Generic feature interactions (e.g., "User created a task", "User changed theme").</li>
-    <li>A non-personal app-instance identifier used by these analytics tools.</li>
+  <li>Crash reports and diagnostic information to help identify and fix software issues.</li>
+
+  <li>Anonymous usage events, such as opening screens, creating tasks, changing settings, or using features.</li>
+
+  <li>A non-personal Firebase App Instance ID used solely for analytics and crash reporting.</li>
 </ul>
 
-<p><strong>What we DO NOT track:</strong></p>
+<p><strong>What we do NOT collect</strong></p>
+
 <ul>
-    <li>We <strong>never</strong> track the text content of your tasks or events (e.g., we know a task was created, but we do not know it was named "Buy Medication").</li>
-    <li>We do not track your location.</li>
+  <li>We never collect or transmit the text content of your tasks, events, notes, reminders, or countdowns.</li>
+
+  <li>We do not collect your contacts.</li>
+
+  <li>We do not collect your precise or approximate location.</li>
+
+  <li>We do not collect or use your device's <strong>Advertising ID</strong>.</li>
+
+  <li>We do not build advertising profiles or sell your personal information.</li>
 </ul>
 
-<p>Any analytics or crash data that is transmitted is sent over a secure, encrypted (HTTPS/TLS) connection.</p>
+<p>Analytics and crash information is transmitted securely using encrypted HTTPS/TLS connections.</p>
 
-<h2>3a. Advertising and Campaign Measurement</h2>
-<p>TickDown does <strong>not</strong> display advertisements inside the app. However, we occasionally promote the app through advertising campaigns (for example, on Google Play). When an install originates from one of our campaigns, we and Google use your device's <strong>Advertising ID</strong> solely to measure that campaign's effectiveness — for instance, to confirm that an ad led to an install or a first app open.</p>
-<ul>
-    <li>This is used only to measure our own promotions. We do <strong>not</strong> use it to show you ads within the app, build advertising profiles about you, or sell your data.</li>
-    <li>You can reset or opt out of your Advertising ID at any time in your device settings (<em>Settings → Privacy → Ads</em>), and you can disable in-app analytics from TickDown's Settings screen.</li>
-</ul>
+<p>If you have any privacy concerns or wish to request deletion of analytics data associated with your device, please contact us at
+<a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a>.</p>
 
 <h2>4. Backup & Restore</h2>
-<p>The app includes a feature to export your data to a JSON file. This file is generated locally on your device.</p>
+
+<p>TickDown allows you to export your data as a JSON backup file.</p>
+
 <ul>
-    <li>You are responsible for storing this backup file securely.</li>
-    <li>If you share this file (e.g., via email or cloud storage), that transmission is subject to the privacy policies of the service you use to share it. TickDown does not see or access your backup files.</li>
+  <li>Backup files are created locally on your device.</li>
+
+  <li>You are responsible for storing your backup files securely.</li>
+
+  <li>If you choose to share or upload a backup file using another service (such as email or cloud storage), that transfer is governed by the privacy policy of the service you choose. TickDown does not access your backup files.</li>
 </ul>
 
 <h2>5. No In-App Advertising</h2>
-<p>TickDown is a paid application. We do not display third-party advertisements inside the app, nor do we sell your data to advertisers or data brokers. Advertising-related data is used only to measure our own promotional campaigns, as described in Section 3a.</p>
+
+<p>TickDown is a paid, ad-free application.</p>
+
+<ul>
+  <li>No advertisements are displayed inside the app.</li>
+
+  <li>We do not collect or use your device's Advertising ID.</li>
+
+  <li>We do not sell, rent, or share your personal information with advertisers or data brokers.</li>
+</ul>
 
 <h2>6. Children's Privacy</h2>
-<p>TickDown is not directed toward children under the age of 13. We do not knowingly collect personal information from children. Because the app works offline, parents can be assured that their child's data remains on the device.</p>
 
-<h2>7. Changes to This Policy</h2>
-<p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+<p>TickDown is not directed toward children under the age of 13. We do not knowingly collect personal information from children. Since TickDown primarily stores data locally on the user's device, parents can be confident that children's information remains under their control.</p>
+
+<h2>7. Changes to This Privacy Policy</h2>
+
+<p>We may update this Privacy Policy from time to time. Any changes will be posted on this page together with an updated "Last Updated" date. We encourage you to review this policy periodically.</p>
 
 <div class="contact">
   <h2>8. Contact Us</h2>
-  <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
-  <p><strong>Email:</strong> <a href="mailto:futuretekapps@gmail.com">f
+
+  <p>If you have any questions, suggestions, or privacy-related requests, please contact us:</p>
+
+  <p>
+    <strong>Email:</strong>
+    <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a>
+  </p>
+
+</div>
+
+</body>
+</html>
