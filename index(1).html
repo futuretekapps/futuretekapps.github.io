@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="FutureTek Apps - Beautiful Android apps for productivity, utilities and games.">
+<title>FutureTek Apps</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#f4f7ff;--card:rgba(255,255,255,.78);--text:#111827;--muted:#64748b;
+--primary:#2563eb;--secondary:#7c3aed;--radius:24px;
+--shadow:0 20px 50px rgba(37,99,235,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Outfit,sans-serif;
+background:
+radial-gradient(circle at top left,#dbeafe 0,transparent 40%),
+radial-gradient(circle at bottom right,#ede9fe 0,transparent 40%),
+var(--bg);
+color:var(--text);
+}
+.container{max-width:1320px;margin:auto;padding:20px}
+.hero{text-align:center;padding:80px 20px 60px}
+.hero h1{
+font-size:clamp(44px,7vw,74px);
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+.hero p{max-width:780px;margin:18px auto;color:var(--muted);font-size:1.1rem;line-height:1.7}
+.stats{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:40px}
+.stat{
+background:var(--card);
+padding:18px 30px;border-radius:20px;
+backdrop-filter:blur(18px);
+box-shadow:var(--shadow)
+}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:28px;
+margin-top:40px;
+}
+.card{
+display:flex;
+flex-direction:column;
+background:var(--card);
+backdrop-filter:blur(18px);
+border-radius:var(--radius);
+padding:24px;
+box-shadow:var(--shadow);
+transition:.3s;
+border:1px solid rgba(255,255,255,.6);
+}
+.card:hover{transform:translateY(-8px)}
+.top{display:flex;gap:18px;align-items:center}
+.icon{width:84px;height:84px;border-radius:22px}
+.badge{
+display:inline-block;
+padding:6px 12px;
+border-radius:999px;
+background:#e0e7ff;
+color:#4338ca;
+font-size:.75rem;
+margin-bottom:6px;
+}
+.title{font-size:1.4rem;font-weight:700}
+.sub{color:#6366f1;font-size:.95rem}
+.desc{margin:18px 0;color:var(--muted);line-height:1.7;flex:1}
+.links{display:flex;gap:10px;flex-wrap:wrap}
+.links a{
+text-decoration:none;
+padding:10px 16px;
+border-radius:999px;
+background:#eef2ff;
+color:#334155;
+font-weight:600;
+font-size:.9rem;
+}
+.play{
+margin-top:18px;
+display:inline-flex;
+}
+.play img{height:52px}
+.about{
+text-align:center;
+max-width:860px;
+margin:90px auto 70px;
+}
+.about h2{font-size:2.2rem;margin-bottom:18px}
+.about p{color:var(--muted);line-height:1.8}
+footer{
+background:#0f172a;
+color:#cbd5e1;
+text-align:center;
+padding:45px 20px;
+margin-top:40px;
+}
+@media(max-width:600px){
+.hero{padding-top:55px}
+.icon{width:72px;height:72px}
+}
+@media(prefers-color-scheme:dark){
+body{background:#09090b;color:#fff}
+.card,.stat{background:rgba(30,41,59,.7);border-color:rgba(255,255,255,.08)}
+.desc,.hero p,.about p{color:#cbd5e1}
+.links a{background:#1e293b;color:#fff}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>FutureTek Apps</h1>
+<p>Beautiful Android apps for productivity, utilities, brain training and everyday life. Built with performance, privacy and simplicity in mind.</p>
+
+<div class="stats">
+<div class="stat"><strong>6</strong><br>Published Apps</div>
+<div class="stat"><strong>Productivity • Utilities • Games</strong></div>
+<div class="stat"><strong>Available on Google Play</strong></div>
+</div>
+</section>
+
+<div class="container">
+<div class="grid">
+
+
+<div class="card">
+<div class="top">
+<img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/A9XcP64dvce1CXDDVjDfBg9XtmblbAZzsgnBvoIeC8NFODMox2XE-PTT6MeGHXI-osSVeq4m22dxRWdOtX3j8g=w480-h960" alt="DailyCalc">
+<div>
+<span class="badge">Featured</span>
+<div class="title">DailyCalc</div>
+<div class="sub">40+ Smart Calculators</div>
+</div>
+</div>
+<p class="desc">Smart calculator with EMI, GST, BMI, Unit Converter, Age Calculator and many more.</p>
+<div class="links">
+<a href="https://futuretekapps.github.io/DailyCalc/privacy.html">Privacy</a>
+<a href="https://futuretekapps.github.io/DailyCalc/terms.html">Terms</a>
+</div>
+<div class="play">
+<a href="https://play.google.com/store/apps/details?id=com.futuretekapps.dailycalc">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+</a>
+</div>
+</div>
+
+<div class="card">
+<div class="top">
+<img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/7pZMrY2PkksKssGFjfUYAIE9hfrd3Q82IMkRjNyfO1mt7S2llAAIMdHNZTXK-Pn4E-dNp1JIzIQHVBFKHpXj=w480-h960" alt="TickDown">
+<div>
+<span class="badge">Productivity</span>
+<div class="title">TickDown</div>
+<div class="sub">Countdown Planner</div>
+</div>
+</div>
+<p class="desc">Track countdowns, important events and reminders beautifully.</p>
+<div class="links">
+<a href="https://futuretekapps.github.io/TickDown/privacy.html">Privacy</a>
+<a href="https://futuretekapps.github.io/TickDown/terms.html">Terms</a>
+</div>
+<div class="play">
+<a href="https://play.google.com/store/apps/details?id=com.futuretekapps.tickdown">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+</a>
+</div>
+</div>
+
+<div class="card">
+<div class="top">
+<img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/ZcdRtokNZ4syvuFljjVaVBT6-wEbMDSqrLzqLB9Ig8iigP0HpWeOOeKcBsnu1rhQP9u5zw4l-ka75lIysGQiCw=w480-h960" alt="OptiPDF">
+<div>
+<span class="badge">Utilities</span>
+<div class="title">OptiPDF</div>
+<div class="sub">PDF Toolkit</div>
+</div>
+</div>
+<p class="desc">Compress, optimize, merge and manage PDF documents easily.</p>
+<div class="links">
+<a href="https://futuretekapps.github.io/OptiPDF/privacy_policy.html">Privacy</a>
+<a href="https://futuretekapps.github.io/OptiPDF/terms.html">Terms</a>
+</div>
+<div class="play">
+<a href="https://play.google.com/store/apps/details?id=com.futuretekapps.pdfoptimizer">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+</a>
+</div>
+</div>
+
+<div class="card">
+<div class="top">
+<img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/_6zW60oV6ANqs082WQ-qI0p1XYq5KY5m_KFY5F6x5iMM1mkuqMOWN2pY0C0ctZimL9AJDsWUwVGP1RXX1vr3=w480-h960" alt="Sudoku Smart">
+<div>
+<span class="badge">Games</span>
+<div class="title">Sudoku Smart</div>
+<div class="sub">Classic Sudoku</div>
+</div>
+</div>
+<p class="desc">Elegant Sudoku with multiple difficulties and daily challenges.</p>
+<div class="links">
+<a href="https://futuretekapps.github.io/SudokuSmart/Privacy.html">Privacy</a>
+<a href="https://futuretekapps.github.io/SudokuSmart/terms.html">Terms</a>
+</div>
+<div class="play">
+<a href="https://play.google.com/store/apps/details?id=com.futuretekapps.sudokusmart">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+</a>
+</div>
+</div>
+
+<div class="card">
+<div class="top">
+<img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/iEr6fazMXjCQNsisR3Kt5j4oLzZXn8Ti1GIJOa5izS2vOWglXzPGAwc9oo9oFdGKiWINwjv3hqh5WApKB6zxPA=s320" alt="Memory Rush">
+<div>
+<span class="badge">Games</span>
+<div class="title">Memory Rush</div>
+<div class="sub">Brain Memory Game</div>
+</div>
+</div>
+<p class="desc">Train your memory with fun matching puzzles and brain-boosting gameplay.</p>
+<div class="links">
+<a href="https://futuretekapps.github.io/mindmatch/privacy.html">Privacy</a>
+<a href="https://futuretekapps.github.io/mindmatch/terms.html">Terms</a>
+</div>
+<div class="play">
+<a href="https://play.google.com/store/apps/details?id=com.futuretekapps.mindmatch">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+</a>
+</div>
+</div>
+
+<div class="card">
+<div class="top">
+<img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/6n5jnVh45mh9F2MZvSC1sGfGk2ivQhogzUkmJdSkJa0ignIKT51LhymqozZPVUraJiPB=w240-h480-rw" alt="ColorBee">
+<div>
+<span class="badge">Kids</span>
+<div class="title">ColorBee</div>
+<div class="sub">Coloring Book</div>
+</div>
+</div>
+<p class="desc">Creative coloring experience for kids with beautiful illustrations.</p>
+<div class="links">
+<a href="https://futuretekapps.github.io/ColorBee/privacy.html">Privacy</a>
+
+</div>
+<div class="play">
+<a href="https://play.google.com/store/apps/details?id=com.splashncolor">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+</a>
+</div>
+</div>
+
+</div>
+
+<section class="about">
+<h2>Designed for Everyday Use</h2>
+<p>FutureTek Apps creates high-quality Android applications across productivity, utilities, education and brain-training games. Every app is crafted with privacy, performance and a modern user experience at its core.</p>
+</section>
+
+</div>
+
+<footer>
+<h3>FutureTek Apps</h3>
+<p>futuretekapps@gmail.com</p>
+<p>© 2026 FutureTek Apps. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
