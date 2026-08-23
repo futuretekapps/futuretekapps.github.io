@@ -91,7 +91,7 @@
 
 <h1>Privacy Policy</h1>
 
-<p class="updated"><strong>Last Updated:</strong> August 22, 2026</p>
+<p class="updated"><strong>Last Updated:</strong> August 23, 2026</p>
 
 <p>
 Your content stays on your device. <strong>TickDown Lite</strong> is a free,
@@ -271,11 +271,17 @@ associated with your device, please contact us at
 <h3>6.1 Local backup files</h3>
 
 <p>
-TickDown Lite allows you to export your data as a JSON backup file.
+TickDown Lite allows you to export your data as a backup file (a
+<code>.tickdown</code> file).
 </p>
 
 <ul>
     <li>Backup files are created locally on your device.</li>
+
+    <li>The backup file is not stored in a human-readable format. This guards
+        against casual inspection if the file is opened by another app; it is
+        <em>not</em> a security guarantee, and you should still treat your
+        backup files as sensitive.</li>
 
     <li>You are responsible for storing your backup files securely.</li>
 
@@ -306,8 +312,12 @@ only used if you explicitly turn it on and grant permission.
         access, read, or retrieve your backup at any time.</li>
 
     <li><strong>What is included:</strong> Your tasks, subtasks, events,
-        reminders, and categories &mdash; the same content included in a local
-        backup file.</li>
+        archived events, reminders, and categories &mdash; the same content
+        included in a local backup file. A backup also records which items you
+        have deleted, so that a deletion made on one device is applied when you
+        restore on another. These deletion records contain only an internal
+        identifier and a timestamp &mdash; never the content of the deleted
+        item.</li>
 
     <li><strong>What permission we request:</strong> TickDown Lite requests only
         the <code>https://www.googleapis.com/auth/drive.appdata</code> scope.
