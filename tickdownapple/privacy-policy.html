@@ -116,10 +116,12 @@ time with an optional in-app purchase.
         creating an account or signing in. We do not know your identity or
         email address. There is no sign-in of any kind in the app.</li>
 
-    <li><strong>No Cloud Sync:</strong> TickDown for iOS does not operate a
-        server and does not sync your content to any cloud service. Your data
-        leaves your device only if you export a backup file yourself
-        (see Section 6).</li>
+    <li><strong>No Servers, No Sync:</strong> TickDown for iOS does not operate
+        a server, and your content is never uploaded to us. TickDown does not
+        sync your countdowns and tasks between your devices. Your data leaves
+        your device only if you save a backup yourself, or if you switch on
+        optional iCloud backup &mdash; which writes an encrypted backup file to
+        <em>your own</em> iCloud Drive, not to us (see Section 6).</li>
 
     <li><strong>Widgets:</strong> If you add a TickDown home screen or lock
         screen widget, a small snapshot of your upcoming countdowns is written
@@ -127,8 +129,10 @@ time with an optional in-app purchase.
         widget can display it. This snapshot never leaves your device.</li>
 
     <li><strong>Data Deletion:</strong> Deleting the app from your device
-        permanently removes its local data, unless you have manually exported a
-        backup file. You can also erase everything from within the app using
+        permanently removes its local data. Backup files you saved yourself, and
+        any backups in your iCloud Drive, are not removed by deleting the app
+        &mdash; you can delete those in the Files app. You can also erase
+        everything from within the app using
         <strong>Settings &rarr; Delete All Data</strong>.</li>
 </ul>
 
@@ -284,35 +288,71 @@ please contact us at
 <h2>6. Backup &amp; Restore</h2>
 
 <p>
-TickDown allows you to export your data as a backup file (a
-<code>.json</code> file) and to import it again later.
+TickDown can save your data as an encrypted backup file (a
+<code>.tickdown</code> file) and restore it later. A backup contains your
+countdowns, tasks, subtasks, categories, your chosen event photos and your app
+settings.
 </p>
 
+<h3>Encryption</h3>
+
 <ul>
-    <li>Backup files are created on your device and saved wherever you choose
-        through the iOS document picker &mdash; for example On My iPhone, iCloud
-        Drive or another storage provider you have installed.</li>
+    <li>Every backup is encrypted on your device using
+        <strong>AES-256-GCM</strong> before it is written. Backups are created
+        and read only on your device; we never receive a copy and we hold no
+        key.</li>
 
-    <li>The backup contains your countdowns, tasks, subtasks and categories in
-        readable form. You should treat your backup files as sensitive.</li>
+    <li>If you turn on <strong>Protect with a Passphrase</strong>, the
+        encryption key is derived from the passphrase you choose. Nobody can
+        read or restore that backup without it &mdash; including us. If you
+        forget it, the backup cannot be recovered.</li>
 
-    <li>You are responsible for storing your backup files securely.</li>
+    <li>If you do not set a passphrase, the backup is still encrypted, but the
+        key is derived from a value held inside the app itself. This keeps the
+        contents from being readable in the Files app, a cloud preview or a text
+        editor. We want to be clear about its limit: because the key comes from
+        the app, it does not protect the file against someone determined who has
+        both the file and the app. For meaningful protection, use a
+        passphrase.</li>
+</ul>
 
-    <li>If you save, share or upload a backup file using another service (such
-        as email, iCloud Drive or another cloud provider), that transfer is
-        governed by the privacy policy of the service you choose. TickDown does
-        not access your backup files after they are written, and we never
-        receive a copy.</li>
+<h3>Where backups are stored</h3>
 
-    <li>TickDown for iOS does <strong>not</strong> include an automatic cloud
-        backup feature.</li>
+<ul>
+    <li><strong>Saved by you:</strong> backups you save through the iOS document
+        picker go wherever you choose &mdash; On My iPhone, iCloud Drive, or
+        another storage provider you have installed.</li>
+
+    <li><strong>iCloud backup (optional):</strong> if you turn it on, TickDown
+        writes backups to <em>your own</em> iCloud Drive, in the app's own
+        folder (Files &rarr; iCloud Drive &rarr; TickDown &rarr; Backups). These
+        files are held in your personal Apple account, count against your iCloud
+        storage, and are governed by
+        <a href="https://www.apple.com/legal/privacy/">Apple's privacy
+        policy</a>. They are not sent to us and we cannot access them. You can
+        view and delete them at any time in the Files app or from within
+        TickDown.</li>
+
+    <li><strong>Automatic backup</strong> is off unless you switch it on. When
+        on, it runs at most once a day and always without a passphrase, because
+        no one is present to enter one.</li>
+
+    <li>TickDown keeps only the most recent backups in iCloud and removes older
+        ones automatically.</li>
+
+    <li>If you save, share or upload a backup using another service (email,
+        another cloud provider, and so on), that transfer is governed by the
+        privacy policy of the service you choose.</li>
+
+    <li>You remain responsible for storing your backup files, and any
+        passphrase you set, securely.</li>
 </ul>
 
 <div class="highlight">
     <p><strong>In short:</strong> we operate no servers that hold your content.
     The only data that ever leaves your device is advertising and
     analytics/crash information described in Sections 3 and 5, plus any backup
-    file that you choose to save or share yourself.</p>
+    file that you choose to save, share, or store in your own iCloud Drive.</p>
 </div>
 
 <h2>7. Children's Privacy</h2>
