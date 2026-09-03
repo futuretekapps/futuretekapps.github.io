@@ -91,7 +91,7 @@
 
 <h1>Privacy Policy</h1>
 
-<p class="updated"><strong>Last Updated:</strong> September 2, 2026<br>
+<p class="updated"><strong>Last Updated:</strong> September 3, 2026<br>
 <strong>Applies to:</strong> TickDown for iOS (iPhone and iPad)</p>
 
 <p>
@@ -307,13 +307,19 @@ settings.
         read or restore that backup without it &mdash; including us. If you
         forget it, the backup cannot be recovered.</li>
 
-    <li>If you do not set a passphrase, the backup is still encrypted, but the
-        key is derived from a value held inside the app itself. This keeps the
-        contents from being readable in the Files app, a cloud preview or a text
-        editor. We want to be clear about its limit: because the key comes from
-        the app, it does not protect the file against someone determined who has
-        both the file and the app. For meaningful protection, use a
-        passphrase.</li>
+    <li>If you do not set a passphrase, the backup is still encrypted. The key
+        is a random key created on your device and stored in your keychain,
+        which iOS syncs to your other devices through iCloud Keychain. It never
+        leaves your devices and we never see it, so nobody else can read the
+        backup &mdash; including us. Because the key is yours rather than the
+        app's, a backup made this way restores on your own iPhones and iPads
+        without typing anything, but it will <em>not</em> restore on a device
+        that is not signed in to your iCloud Keychain. If you need a backup you
+        can open anywhere, use a passphrase.</li>
+
+    <li>Backups created by older versions of TickDown used a key held inside the
+        app itself, which offered less protection. Those backups can still be
+        restored, but new backups are no longer created that way.</li>
 </ul>
 
 <h3>Where backups are stored</h3>
