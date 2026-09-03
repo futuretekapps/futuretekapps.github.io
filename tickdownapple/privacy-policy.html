@@ -222,8 +222,9 @@ mediated advertising networks.
 
 <p>
 TickDown offers an optional one-time in-app purchase that removes
-advertisements and unlocks premium features such as home and lock screen
-widgets.
+advertisements and unlocks the home and lock screen widgets, unlimited photo
+backgrounds, and automatic daily iCloud backup. It is a one-time purchase, not a
+subscription.
 </p>
 
 <ul>
@@ -237,6 +238,12 @@ widgets.
     <li>Restoring a purchase on a new device is handled through your Apple
         Account using the <strong>Restore Purchases</strong> option in the
         app.</li>
+
+    <li>We use Firebase Remote Config (Section 5) to decide which product and
+        price the app offers, and how often it shows the upgrade screen. This
+        may mean different people are shown a different price. Whatever price
+        applies to you is always shown by Apple before you confirm anything, and
+        this involves no additional collection of information about you.</li>
 </ul>
 
 <h2>5. Analytics and Crash Reporting</h2>
@@ -330,21 +337,22 @@ settings.
         another storage provider you have installed.</li>
 
     <li><strong>iCloud backup (optional):</strong> if you turn it on, TickDown
-        writes backups to <em>your own</em> iCloud Drive, in the app's own
-        folder (Files &rarr; iCloud Drive &rarr; TickDown &rarr; Backups). These
-        files are held in your personal Apple account, count against your iCloud
-        storage, and are governed by
+        keeps a single backup file in <em>your own</em> iCloud Drive, in the
+        app's own folder (Files &rarr; iCloud Drive &rarr; TickDown &rarr;
+        Backups). Each new backup replaces the previous one, so no history of
+        earlier backups is kept. The file is held in your personal Apple
+        account, counts against your iCloud
+        storage, and is governed by
         <a href="https://www.apple.com/legal/privacy/">Apple's privacy
-        policy</a>. They are not sent to us and we cannot access them. You can
-        view and delete them at any time in the Files app or from within
+        policy</a>. It is not sent to us and we cannot access it. You can view
+        and delete it at any time in the Files app or from within
         TickDown.</li>
 
-    <li><strong>Automatic backup</strong> is off unless you switch it on. When
-        on, it runs at most once a day and always without a passphrase, because
-        no one is present to enter one.</li>
-
-    <li>TickDown keeps only the most recent backups in iCloud and removes older
-        ones automatically.</li>
+    <li><strong>Automatic backup</strong> is off unless you switch it on, and
+        requires the optional Premium purchase. When on, it runs at most once a
+        day and always without a passphrase, because no one is present to enter
+        one. Backing up manually, and <em>restoring</em> a backup, never require
+        Premium &mdash; your data is not held behind a purchase.</li>
 
     <li>If you save, share or upload a backup using another service (email,
         another cloud provider, and so on), that transfer is governed by the
