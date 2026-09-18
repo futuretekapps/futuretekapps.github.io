@@ -5,9 +5,9 @@
 <script>document.documentElement.className="js";</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 
-<title>FutureTek Apps — Android Apps for Everyday Life</title>
+<title>FutureTek Apps — Android &amp; iOS Apps for Everyday Life</title>
 
-<meta name="description" content="FutureTek Apps builds fast, private and beautifully designed Android apps for productivity, utilities, brain training and everyday life.">
+<meta name="description" content="FutureTek Apps builds fast, private and beautifully designed Android and iOS apps for productivity, utilities, brain training and everyday life.">
 <meta name="theme-color" content="#f7f8fc" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#070a12" media="(prefers-color-scheme: dark)">
 <link rel="canonical" href="https://futuretekapps.github.io/">
@@ -16,8 +16,8 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="FutureTek Apps">
-<meta property="og:title" content="FutureTek Apps — Android Apps for Everyday Life">
-<meta property="og:description" content="Simple, beautiful and useful Android apps for productivity, utilities, brain training and everyday moments.">
+<meta property="og:title" content="FutureTek Apps — Android &amp; iOS Apps for Everyday Life">
+<meta property="og:description" content="Simple, beautiful and useful Android and iOS apps for productivity, utilities, brain training and everyday moments.">
 <meta property="og:url" content="https://futuretekapps.github.io/">
 <meta property="og:image" content="https://futuretekapps.github.io/ft-logo.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -702,6 +702,7 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     display:inline-flex;
     padding:4px 10px;
     margin-bottom:7px;
+    margin-right:4px;
     border-radius:999px;
     background:var(--tint);
     color:var(--primary-dark);
@@ -710,6 +711,12 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
     letter-spacing:.05em;
     text-transform:uppercase;
 }
+.badge.plat{
+    background:var(--surface-2);
+    color:var(--muted);
+    border:1px solid var(--border);
+}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 
 .card h3{
     font-family:"Space Grotesk",sans-serif;
@@ -1081,7 +1088,7 @@ footer{
 
         <div class="eyebrow">
             <span class="dot" aria-hidden="true"></span>
-            7 apps live on Google Play
+            Live on Google Play &amp; the App Store
         </div>
 
         <h1>
@@ -1090,9 +1097,9 @@ footer{
         </h1>
 
         <p class="lede">
-            Simple, beautiful and genuinely useful Android apps for productivity,
-            utilities, brain training and everyday moments — built for speed,
-            privacy and a modern experience.
+            Simple, beautiful and genuinely useful apps for Android and iPhone —
+            productivity, utilities, brain training and everyday moments, built
+            for speed, privacy and a modern experience.
         </p>
 
         <div class="hero-actions">
@@ -1101,7 +1108,11 @@ footer{
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
             </a>
             <a class="btn btn-ghost" href="https://play.google.com/store/apps/developer?id=FutureTek+Apps" target="_blank" rel="noopener">
-                View on Google Play
+                Google Play
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="https://apps.apple.com/developer/id6807993069" target="_blank" rel="noopener">
+                App Store
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
             </a>
         </div>
@@ -1116,7 +1127,7 @@ footer{
 <section class="wrap">
     <div class="stats reveal">
         <div class="stat">
-            <div class="stat-value">7</div>
+            <div class="stat-value">8</div>
             <div class="stat-label">Published apps</div>
         </div>
         <div class="stat">
@@ -1124,8 +1135,8 @@ footer{
             <div class="stat-label">Categories covered</div>
         </div>
         <div class="stat">
-            <div class="stat-value">40+</div>
-            <div class="stat-label">Tools in DailyCalc</div>
+            <div class="stat-value">2</div>
+            <div class="stat-label">Platforms · Android &amp; iOS</div>
         </div>
         <div class="stat">
             <div class="stat-value">100%</div>
@@ -1144,28 +1155,35 @@ footer{
         <div>
             <span class="kicker">Our work</span>
             <h2>Apps you'll actually open twice</h2>
-            <p>Seven Android apps across productivity, utilities, games and kids — each one built to do its job without getting in the way.</p>
+            <p>Eight apps for Android and iPhone across productivity, utilities, games and kids — each one built to do its job without getting in the way.</p>
         </div>
 
-        <div class="filters" role="group" aria-label="Filter apps by category">
-            <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter" type="button" data-filter="Productivity" aria-pressed="false">Productivity</button>
-            <button class="filter" type="button" data-filter="Utilities" aria-pressed="false">Utilities</button>
-            <button class="filter" type="button" data-filter="Games" aria-pressed="false">Games</button>
-            <button class="filter" type="button" data-filter="Kids" aria-pressed="false">Kids</button>
+        <div class="filter-row">
+            <div class="filters" role="group" aria-label="Filter apps by platform">
+                <button class="filter" type="button" data-platform="all" aria-pressed="true">All platforms</button>
+                <button class="filter" type="button" data-platform="android" aria-pressed="false">Android</button>
+                <button class="filter" type="button" data-platform="ios" aria-pressed="false">iOS</button>
+            </div>
+            <div class="filters" role="group" aria-label="Filter apps by category">
+                <button class="filter" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter" type="button" data-filter="Productivity" aria-pressed="false">Productivity</button>
+                <button class="filter" type="button" data-filter="Utilities" aria-pressed="false">Utilities</button>
+                <button class="filter" type="button" data-filter="Games" aria-pressed="false">Games</button>
+                <button class="filter" type="button" data-filter="Kids" aria-pressed="false">Kids</button>
+            </div>
         </div>
     </div>
 
     <div class="grid" id="grid">
 
         <!-- TICKDOWN LITE -->
-        <article class="card featured reveal" data-cat="Productivity">
+        <article class="card featured reveal" data-cat="Productivity" data-platform="android">
             <span class="ribbon">FEATURED</span>
 
             <div class="card-top">
                 <img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/V4kaEPlLlj3oYMYvZuf6Aq0uIRvg_DFQnbHWgVMm6dW8i-bY2iDBEjjJTIjGz1gHPoHC5kDZcTNubTNOae7q=w480-h960" alt="TickDown Countdown &amp; To-Do app icon" width="74" height="74">
                 <div>
-                    <span class="badge">Productivity</span>
+                    <span class="badge">Productivity</span><span class="badge plat">Android</span>
                     <h3>TickDown</h3>
                     <div class="sub">Countdown &amp; To-Do</div>
                 </div>
@@ -1189,11 +1207,11 @@ footer{
         </article>
 
         <!-- DAILYCALC -->
-        <article class="card reveal" data-cat="Utilities">
+        <article class="card reveal" data-cat="Utilities" data-platform="android">
             <div class="card-top">
                 <img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/A9XcP64dvce1CXDDVjDfBg9XtmblbAZzsgnBvoIeC8NFODMox2XE-PTT6MeGHXI-osSVeq4m22dxRWdOtX3j8g=w480-h960" alt="DailyCalc app icon" width="74" height="74">
                 <div>
-                    <span class="badge">Utilities</span>
+                    <span class="badge">Utilities</span><span class="badge plat">Android</span>
                     <h3>DailyCalc</h3>
                     <div class="sub">40+ Smart Calculators</div>
                 </div>
@@ -1216,11 +1234,11 @@ footer{
         </article>
 
         <!-- TICKDOWN -->
-        <article class="card reveal" data-cat="Productivity">
+        <article class="card reveal" data-cat="Productivity" data-platform="android">
             <div class="card-top">
                 <img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/7pZMrY2PkksKssGFjfUYAIE9hfrd3Q82IMkRjNyfO1mt7S2llAAIMdHNZTXK-Pn4E-dNp1JIzIQHVBFKHpXj=w480-h960" alt="TickDown Countdown Planner app icon" width="74" height="74">
                 <div>
-                    <span class="badge">Productivity</span>
+                    <span class="badge">Productivity</span><span class="badge plat">Android</span>
                     <h3>TickDown</h3>
                     <div class="sub">Countdown Planner</div>
                 </div>
@@ -1242,12 +1260,39 @@ footer{
             </div>
         </article>
 
+        <!-- TICKDOWN (iOS) -->
+        <article class="card reveal" data-cat="Productivity" data-platform="ios">
+            <div class="card-top">
+                <img class="icon" loading="lazy" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/be/03/92/be039223-4b4b-0673-309e-67319951c28b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg" alt="TickDown Countdown &amp; Tasks app icon" width="74" height="74">
+                <div>
+                    <span class="badge">Productivity</span><span class="badge plat">iOS</span>
+                    <h3>TickDown</h3>
+                    <div class="sub">Countdown &amp; Tasks</div>
+                </div>
+            </div>
+
+            <p class="desc">
+                Countdowns and to-dos on one screen for iPhone — birthdays, trips and
+                deadlines to the second, with tasks, subtasks, widgets and iCloud backup.
+            </p>
+
+            <div class="card-foot">
+                <a class="play" href="https://apps.apple.com/app/id6807993067" target="_blank" rel="noopener">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download TickDown on the App Store" loading="lazy" width="156" height="52">
+                </a>
+                <div class="meta-links">
+                    <a href="https://futuretekapps.github.io/tickdownapple/privacy-policy.html" target="_blank" rel="noopener">Privacy</a>
+                    <a href="https://futuretekapps.github.io/tickdownapple/terms-of-use.html" target="_blank" rel="noopener">Terms</a>
+                </div>
+            </div>
+        </article>
+
         <!-- OPTIPDF -->
-        <article class="card reveal" data-cat="Utilities">
+        <article class="card reveal" data-cat="Utilities" data-platform="android">
             <div class="card-top">
                 <img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/8mQ4Nmp_9aE4PqDjJL83_Qyfu0YoaW_tzKPzY2Hn9MTB6f7whMU1LboytpaB4Ye6TmCbByKVTObWTtdFBJRczQ=w480-h960" alt="OptiPDF app icon" width="74" height="74">
                 <div>
-                    <span class="badge">Utilities</span>
+                    <span class="badge">Utilities</span><span class="badge plat">Android</span>
                     <h3>OptiPDF</h3>
                     <div class="sub">PDF Toolkit</div>
                 </div>
@@ -1255,7 +1300,7 @@ footer{
 
             <p class="desc">
                 Compress, optimize, merge, split and manage PDF documents
-                easily from your Android device.
+                easily from your phone.
             </p>
 
             <div class="card-foot">
@@ -1270,11 +1315,11 @@ footer{
         </article>
 
         <!-- SUDOKU SMART -->
-        <article class="card reveal" data-cat="Games">
+        <article class="card reveal" data-cat="Games" data-platform="android">
             <div class="card-top">
                 <img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/nv9m5dyxUsPjw4LAy4zxbJubK1y5FF87XZQr4WnPVwoS0vO_EwU7qj5WV21jse4Og6GuorxDk8NiEE8kODfOkg=w480-h960" alt="Sudoku Smart app icon" width="74" height="74">
                 <div>
-                    <span class="badge">Games</span>
+                    <span class="badge">Games</span><span class="badge plat">Android</span>
                     <h3>Sudoku Smart</h3>
                     <div class="sub">Classic Sudoku</div>
                 </div>
@@ -1297,11 +1342,11 @@ footer{
         </article>
 
         <!-- MEMORY RUSH -->
-        <article class="card reveal" data-cat="Games">
+        <article class="card reveal" data-cat="Games" data-platform="android">
             <div class="card-top">
                 <img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/iEr6fazMXjCQNsisR3Kt5j4oLzZXn8Ti1GIJOa5izS2vOWglXzPGAwc9oo9oFdGKiWINwjv3hqh5WApKB6zxPA=s320" alt="Memory Rush app icon" width="74" height="74">
                 <div>
-                    <span class="badge">Games</span>
+                    <span class="badge">Games</span><span class="badge plat">Android</span>
                     <h3>Memory Rush</h3>
                     <div class="sub">Brain Memory Game</div>
                 </div>
@@ -1324,11 +1369,11 @@ footer{
         </article>
 
         <!-- COLORBEE -->
-        <article class="card reveal" data-cat="Kids">
+        <article class="card reveal" data-cat="Kids" data-platform="android">
             <div class="card-top">
                 <img class="icon" loading="lazy" src="https://play-lh.googleusercontent.com/6n5jnVh45mh9F2MZvSC1sGfGk2ivQhogzUkmJdSkJa0ignIKT51LhymqozZPVUraJiPB=w240-h480-rw" alt="ColorBee Kids Coloring Book app icon" width="74" height="74">
                 <div>
-                    <span class="badge">Kids</span>
+                    <span class="badge">Kids</span><span class="badge plat">Android</span>
                     <h3>ColorBee</h3>
                     <div class="sub">Coloring Book</div>
                 </div>
@@ -1398,7 +1443,7 @@ footer{
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20a8 8 0 1 0-8-8"/><path d="M4 12H2m2 0 2.5-2.5"/><path d="M12 7v5l3 2"/></svg>
             </div>
             <h3>Actively updated</h3>
-            <p>Regular improvements driven by real user feedback from the Play Store.</p>
+            <p>Regular improvements driven by real user feedback from Google Play and the App Store.</p>
         </div>
 
     </div>
@@ -1410,12 +1455,12 @@ footer{
     <div class="cta reveal">
         <h2>Useful apps. Simple experiences.</h2>
         <p>
-            FutureTek Apps creates high-quality Android applications across productivity,
+            FutureTek Apps creates high-quality Android and iOS applications across productivity,
             utilities, education and brain-training games. The goal is simple: make apps
             that feel fast, intuitive and enjoyable — while respecting your privacy.
         </p>
         <div class="cta-actions">
-            <a class="btn btn-primary" href="https://play.google.com/store/apps/developer?id=FutureTek+Apps" target="_blank" rel="noopener">
+            <a class="btn btn-primary" href="#apps">
                 Browse all apps
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
             </a>
@@ -1439,14 +1484,15 @@ footer{
                     <span>FutureTek Apps</span>
                 </div>
                 <p class="footer-copy">
-                    Android apps for productivity, utilities, brain training and everyday life.
+                    Android and iOS apps for productivity, utilities, brain training and everyday life.
                     Built with care, shipped with purpose.
                 </p>
             </div>
 
             <div class="fcol">
                 <h4>Apps</h4>
-                <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.tickdownlite" target="_blank" rel="noopener">TickDown</a>
+                <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.tickdownlite" target="_blank" rel="noopener">TickDown (Android)</a>
+                <a href="https://apps.apple.com/app/id6807993067" target="_blank" rel="noopener">TickDown (iOS)</a>
                 <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.dailycalc" target="_blank" rel="noopener">DailyCalc</a>
                 <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.pdfoptimizer" target="_blank" rel="noopener">OptiPDF</a>
                 <a href="https://play.google.com/store/apps/details?id=com.futuretekapps.sudokusmart" target="_blank" rel="noopener">Sudoku Smart</a>
@@ -1458,6 +1504,7 @@ footer{
                 <a href="#apps">All apps</a>
                 <a href="#why">Why FutureTek</a>
                 <a href="https://play.google.com/store/apps/developer?id=FutureTek+Apps" target="_blank" rel="noopener">Google Play profile</a>
+                <a href="https://apps.apple.com/developer/id6807993069" target="_blank" rel="noopener">App Store profile</a>
                 <a href="mailto:futuretekapps@gmail.com">futuretekapps@gmail.com</a>
             </div>
 
@@ -1465,7 +1512,7 @@ footer{
 
         <div class="legal">
             <span>© <span id="year">2026</span> FutureTek Apps. All rights reserved.</span>
-            <span>Made for Android · Google Play</span>
+            <span>Android &amp; iOS · Google Play &amp; the App Store</span>
         </div>
 
     </div>
@@ -1485,7 +1532,8 @@ footer{
   "url":"https://futuretekapps.github.io/",
   "logo":"https://futuretekapps.github.io/ft-logo.png",
   "email":"futuretekapps@gmail.com",
-  "description":"FutureTek Apps builds Android apps for productivity, utilities, brain training and everyday life."
+  "description":"FutureTek Apps builds Android and iOS apps for productivity, utilities, brain training and everyday life.",
+  "sameAs":["https://play.google.com/store/apps/developer?id=FutureTek+Apps","https://apps.apple.com/developer/id6807993069"]
 }
 </script>
 
@@ -1572,28 +1620,36 @@ footer{
         });
     }
 
-    /* ---- filters ---- */
-    var filters = document.querySelectorAll(".filter");
+    /* ---- filters: category × platform ---- */
+    var catBtns  = document.querySelectorAll(".filter[data-filter]");
+    var platBtns = document.querySelectorAll(".filter[data-platform]");
     var empty = document.getElementById("empty");
+    var cat = "all", plat = "all";
 
-    filters.forEach(function(btn){
-        btn.addEventListener("click", function(){
-            var cat = btn.dataset.filter;
-
-            filters.forEach(function(b){
-                b.setAttribute("aria-pressed", b === btn ? "true" : "false");
-            });
-
-            var shown = 0;
-            cards.forEach(function(card){
-                var match = cat === "all" || card.dataset.cat === cat;
-                card.style.display = match ? "" : "none";
-                if(match) shown++;
-            });
-
-            empty.classList.toggle("show", shown === 0);
+    function applyFilters(){
+        var shown = 0;
+        cards.forEach(function(card){
+            var match = (cat  === "all" || card.dataset.cat === cat) &&
+                        (plat === "all" || card.dataset.platform === plat);
+            card.style.display = match ? "" : "none";
+            if(match) shown++;
         });
-    });
+        empty.classList.toggle("show", shown === 0);
+    }
+
+    function wire(btns, key, set){
+        btns.forEach(function(btn){
+            btn.addEventListener("click", function(){
+                set(btn.dataset[key]);
+                btns.forEach(function(b){
+                    b.setAttribute("aria-pressed", b === btn ? "true" : "false");
+                });
+                applyFilters();
+            });
+        });
+    }
+    wire(catBtns,  "filter",   function(v){ cat  = v; });
+    wire(platBtns, "platform", function(v){ plat = v; });
 
     /* ---- year ---- */
     document.getElementById("year").textContent = new Date().getFullYear();
